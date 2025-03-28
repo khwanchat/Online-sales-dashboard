@@ -84,6 +84,24 @@ st.dataframe(
 )
 
 # --------------------------------------
+# ✅ Simulated ROPA Table
+# --------------------------------------
+st.markdown("### 🔐 Record of Processing Activities (ROPA) – Example")
+
+# Simulated ROPA data
+ropa_data = {
+    "Data Type": ["Customer Name", "Email Address", "Purchase History", "Country"],
+    "Purpose": ["Personalization", "Loyalty Program", "Product Recommendations", "Localization"],
+    "Retention Period": ["2 years", "2 years", "5 years", "5 years"],
+    "Accessed By": ["Marketing Team", "CRM System", "Analytics Team", "Localization Tool"],
+    "Legal Basis": ["Consent", "Consent", "Legitimate Interest", "Contract"]
+}
+
+ropa_df = pd.DataFrame(ropa_data)
+
+st.dataframe(ropa_df)
+
+# --------------------------------------
 # ✅ Footer
 # --------------------------------------
 st.markdown("---")
